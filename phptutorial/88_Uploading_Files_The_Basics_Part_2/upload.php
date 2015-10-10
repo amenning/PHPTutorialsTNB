@@ -1,12 +1,12 @@
 <?php
 
-$filename = $_FILES['file']['name'];
-$size = $_FILES['file']['size'];
-$type = $_FILES['file']['type'];
+@$filename = $_FILES['file']['name'];
+@$size = $_FILES['file']['size'];
+@$type = $_FILES['file']['type'];
 
-$temp_name = $_FILES['file']['tmp_name'];
+@$temp_name = $_FILES['file']['tmp_name'];
 
-$error = $_FILES['file']['error']; //returns 0 if there is no error
+@$error = $_FILES['file']['error']; //returns 0 if there is no error
 
 if(isset($filename)){
 	if(!empty($filename)){
