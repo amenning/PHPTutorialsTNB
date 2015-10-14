@@ -1,7 +1,7 @@
 <?php
 require 'connect.inc.php';
 
-$query = "SELECT 'food', 'calories' FROM 'food' ORDER BY 'id' DESC";
+$query = "SELECT `food`, `calories` FROM `food` ORDER BY `id` DESC";
 
 if ($query_run = mysql_query($query)){
 	
