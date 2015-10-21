@@ -7,7 +7,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 	$password_hash = md5($password);
 	
 	if(!empty($username) && !empty($password)){
-		$query = "SELECT `id` FROM `users_135` WHERE `username`='$username' AND `password`='$password_hash'";
+		$query = "SELECT `id` FROM `users_135` WHERE `username`='".mysql_real_escape_string($username)."' AND `password`='".mysql_real_escape_string($password_hash)."'";
 		if($query_run = mysql_query($query)){
 			$query_num_rows = mysql_num_rows($query_run);
 			
