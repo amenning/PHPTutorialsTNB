@@ -4,7 +4,7 @@ class Circle{
 	const pi = 3.141;
 	
 	public function Area($radius){
-		return $this::pi * ($radius*$radius);
+		return self::pi * ($radius*$radius);
 	}
 }
 
